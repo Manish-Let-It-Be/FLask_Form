@@ -1,4 +1,4 @@
-# [Simple Demographic Student Details Management](https://flask-forms.vercel.app/)
+# [Simple Demographic Student Details Management](https://f-lask-form.vercel.app/)
 
 A web application for managing student demographic details using Flask. This project serves as a practical introduction to Flask and web development concepts.
 
@@ -41,7 +41,7 @@ https://github.com/user-attachments/assets/ebf2e6e7-c783-45ee-8c5b-c5d710946f78
 
 ## Installation
 
-### [Web](https://flask-forms.vercel.app/)
+### [Web](https://f-lask-form.vercel.app/)
 
 To set up the project locally, follow these steps:
 
