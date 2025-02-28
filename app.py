@@ -145,7 +145,7 @@ def search_students():
 
     for division_name, students in data['divisions'].items():
         for student in students:
-            student['division'] = division_name  
+            student['division'] = division_name 
             all_students.append(student)
 
     # Filtering by name
