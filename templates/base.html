@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            {% if session.username %}
+                <a href="{{ url_for('home') }}" class="nav-button">Home</a> 
+                Welcome to Student Management System <br><hr><hr>
+                <div class="nav">    
+                    <h2>Search Student</h2>
+                    <form method="GET" action="{{ url_for('search_students') }}">
+                        <input type="text" name="query" placeholder="Search Students by name..." required>
+                        <button type="submit" class="action-button">Search</button>
+                    </form>
+                </div>
+            {% else %}
+                Welcome to Student Management System
+            {% endif %}
+        </h1>
+        <hr><br>
+
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <div class="auth-links">
+            {% if session.username %}
+                <p>Welcome, {{ session.username }}! <a href="{{ url_for('logout') }}" class="delete-button">Logout</a></p>
+            {% else %}
+                <a href="{{ url_for('login') }}" class="nav-button">Login</a>
+                <a href="{{ url_for('register') }}" class="export-button">Register</a>
+            {% endif %}
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+        <div>
+            {% if session.username %}
+                <a href="{{ url_for('export_all_students') }}" class="export-button">Export Entire Students</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div id="custom-cursor"></div>
+    <script>
+        const cursor = document.getElementById('custom-cursor');
+    
+        document.addEventListener('mousemove', (e) => {
+            // Updating position of the custom cursor
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+    "divisions": {
+        "4B1": [
+            {
+                "id": "stu3d3d5",
+                "name": "Adarsh Kumar",
+                "email": "adarsh@gmail.com",
+                "phone": "70029292929",
+                "division": "4B1"
+            },
+            {
+                "id": "stu9a218",
+                "name": "Jay Dhodi",
+                "email": "jay@gmail.com",
+                "phone": "878987789",
+                "division": "4B1"
+            },
+            {
+                "id": "stub5876",
+                "name": "Omkar Prasad",
+                "email": "omkar@mail.com",
+                "phone": "877787898",
+                "division": "4B1"
+            },
+            {
+                "id": "stue5232",
+                "name": "Rahul Kumar",
+                "email": "rahul@mail.com",
+                "phone": "623567879",
+                "division": "4B1"
+            },
+            {
+                "id": "stu8b972",
+                "name": "Seeta Kumari",
+                "email": "seeta@gmail.com",
+                "phone": "7677876788",
+                "division": "4B1"
+            }
+        ],
+        "4B2": [
+            {
+                "id": "stu7e1d0",
+                "name": "Sanket Jha Sharma",
+                "email": "sanket@yandex.com",
+                "phone": "777678898",
+                "division": "4B2"
+            }
+        ],
+        "4B3": [
+            {
+                "id": "stu60e85",
+                "name": "Ram Mohan",
+                "email": "ram@mohan.com",
+                "phone": "767787876",
+                "division": "4B3"
+            },
+            {
+                "id": "stua28ae",
+                "name": "Rajesh Kumar",
+                "email": "rajesh@microsoft.com",
+                "phone": "6766655567",
+                "division": "4B3"
+            }
+        ],
+        "4B4": [
+            {
+                "id": "stuc705b",
+                "name": "Gautam Kumar",
+                "email": "gautamkr@gmail.com",
+                "phone": "8283889876",
+                "division": "4B4"
+            }
+        ],
+        "4B5": [],
+        "4B8": [],
+        "4B9": []
+    }
+}
