@@ -23,7 +23,7 @@
             <td>{{ student.phone }}</td>
             <td>{{ student.division }}</td>
             <td>
-                <form action="{{ url_for('delete_student', division_name=division_name, student_id=student.id) }}" method="POST" style="display:inline;">
+                <form action="{{ url_for('delete_student', division_name=student.division, student_id=student.id) }}" method="POST" style="display:inline;">
                     <button type="submit" class="delete-button">Delete</button>
                 </form>
                 <a href="{{ url_for('update_student', division_name=division_name, student_id=student.id) }}" class="action-button">Update</a>
