@@ -23,15 +23,8 @@
                 "division": "4B1"
             },
             {
-                "id": "stue5232",
-                "name": "Rahul Kumar",
-                "email": "rahul@mail.com",
-                "phone": "623567879",
-                "division": "4B1"
-            },
-            {
                 "id": "stu8b972",
-                "name": "Seeta Kumari",
+                "name": "Seeta Sharma",
                 "email": "seeta@gmail.com",
                 "phone": "7677876788",
                 "division": "4B1"
@@ -73,6 +66,7 @@
         ],
         "4B5": [],
         "4B8": [],
-        "4B9": []
+        "4B9": [],
+        "4B10": []
     }
 }
